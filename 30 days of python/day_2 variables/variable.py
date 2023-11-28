@@ -32,7 +32,7 @@ print('True: ', is_true)
 print('Skills: ', skills)
 print('Person information: ', personal_info)
 
-# Declaring multiple variables in one line
+# Declaring multiple variables in one linE
 
 first_name, last_name, country, age, is_married = 'rahma', 'lyse', 'kazakhstan', 19, True
 
