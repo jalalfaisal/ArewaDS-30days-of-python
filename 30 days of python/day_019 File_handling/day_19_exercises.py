@@ -61,13 +61,13 @@ most_populated_countries = find_most_populated_countries('data/countries_data.js
 for country in most_populated_countries:
     print(f"{country['name']}: {country['population']}")
 
-question 4 Extract all incoming email addresses as a list from the email_exchange_big.txt file:
-    def extract_email_addresses(file_path):
-    with open(file_path, 'r') as file:
-        content = file.read()
+#question 4 Extract all incoming email addresses as a list from the email_exchange_big.txt file:
+def extract_email_addresses(file_path):
+                with open(file_path, 'r') as file:
+                    content = file.read()
 
-    email_addresses = re.findall(r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b', content)
-    return email_addresses
+                email_addresses = re.findall(r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b', content)
+                return email_addresses
 
 email_addresses = extract_email_addresses('data/email_exchange_big.txt')
 print(f"{len(email_addresses)} email addresses found: {email_addresses}")
