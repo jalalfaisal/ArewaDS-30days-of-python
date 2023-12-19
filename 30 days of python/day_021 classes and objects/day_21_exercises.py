@@ -86,7 +86,7 @@ class PersonAccount:
 
 
 # initiation
- person = PersonAccount("John", "Doe")
+person = PersonAccount("John", "Doe")
 person.add_income(5000, "Salary")
 person.add_income(2000, "Freelance")
 person.add_expense(1000, "Rent")
