@@ -143,3 +143,40 @@ def make_car(manufacturer, model, **optional_info):
 
 car = make_car('subaru', 'outback', color='blue', tow_package=True)
 print(car)
+
+
+#8-15
+# printing_models.py
+from printing_functions import build_model, display_models
+
+build_model("Tesla", "Model S", "electric", "5 seat")
+build_model("Ford", "Fiesta", "gasoline", "5 seat")
+
+display_models()
+
+#8-16
+# example.py
+def greet():
+    print("Hello, World!")
+
+#import the functions Above
+# Import the entire module and call the function using the module name.
+import example
+example.greet()
+
+# Import just the function from the module.
+from example import greet
+greet()
+
+# Import the function from the module and assign it a shorter name.
+from example import greet as g
+g()
+
+# Import all functions from the module using a wildcard.
+from example import *
+greet()
+
+#8-17
+#1
+#2
+# 3   
